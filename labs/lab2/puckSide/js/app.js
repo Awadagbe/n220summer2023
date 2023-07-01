@@ -11,7 +11,7 @@ function draw(){
     if(mouseX>200){
         fill(235, 64,52);
     }else{
-        fill(50, 50, 50);
+        fill(50, 100, 250);
     }
 
     //draw the circle
