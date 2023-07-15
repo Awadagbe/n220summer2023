@@ -1,4 +1,4 @@
-//initialize the arrays of colors of string tyoe
+//initialized the arrays of colors of string type
 let colors = ["orange", 'blue', "green"];
 
 xPos = 150;
@@ -17,7 +17,7 @@ function setup(){
         //each rectangle with the array color from left to right
         fill(colors[i]);
 
-        //need to check for i==0, if i==0 don't change the initialized y position otherwise multiply 60 by the iterand plus one
+        //need to check for i==0, if i==0 don't change the initialized y position otherwise multiply 60 by the iterant plus one
         if(i!=0){
             yPos = 60*(i+1);
         }
