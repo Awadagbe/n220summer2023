@@ -39,7 +39,7 @@ function showBooks(){
         
         newEl.style.width="100px";
 
-        if(books[i].copies > 20){
+        if(books[i].pages > 20){
             newEl.style.backgroundColor="#FFF200";
         }
 
