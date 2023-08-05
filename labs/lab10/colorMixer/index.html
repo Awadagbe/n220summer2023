@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #divmixer{
+            width: 800px;
+            height: 200px;
+            background-color: rgb(0, 0, 34)
+        }
+        #divrgb{
+            width: 800px;
+            height: 40px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 2px solid black;
+            display:flex;
+            align-items: center;
+            text-align: center;
+        }
+        .buttonstyle{
+            width: 80px;
+            height: 30px;
+            background-color: rgb(200,200,200);
+            margin: 20px;
+            border: 0px;
+        }
+        .colordiv{
+            display:flex; 
+            width: 600px;
+            height: 30px;
+            margin: 20px;
+
+        }
+        .textdiv{
+            font-weight: bold;
+            margin-top: 25px;
+            width: 100px;
+            font-size: x-large;
+        }
+
+    </style>
+</head>
+<body>
+    <div>Color Mixer</div>
+    <div id="divmixer"></div>
+    <div id="divrgb">current color: rgb(<div id="rcolor">0</div>, <div id="gcolor">0</div>, <div id="bcolor">0</div>)</div>
+   
+    <div class="colordiv"><div class="textdiv">Red: </div><div><button id="red1" data-response="red1" class="buttonstyle">+1</button><button onclick="itsClicked(event)" data-response="red5" class="buttonstyle">+5</button><button onclick="itsClicked(event)" data-response="red10" class="buttonstyle">+10</button></div></div>
+    <div class="colordiv"><div class="textdiv">Green: </div><div><button onclick="itsClicked(event)" data-response="green1" class="buttonstyle">+1</button><button onclick="itsClicked(event)" data-response="green5" class="buttonstyle">+5</button><button onclick="itsClicked(event)" data-response="green10" class="buttonstyle">+10</button></div></div>
+    <div class="colordiv"><div class="textdiv">Blue: </div><div><button onclick="itsClicked(event)" data-response="blue1" class="buttonstyle">+1</button><button onclick="itsClicked(event)" data-response="blue5" class="buttonstyle">+5</button><button onclick="itsClicked(event)" data-response="blue10" class="buttonstyle">+10</button></div></div>
+    
+    <script language="javascript" type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
