@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+      
+<head>
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <!-- CSS file Included -->
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <!-- JavaScript file included -->
+    <script src="js/app.js"></script>
+</head>
+  
+<body>
+    <div id="main">
+        <h1>TIC TAC TOE GAME</h1>
+        <p id="desc">
+              Click on any box to start the game<br><br>First Player is
+            <b>Player A </b>And Second Player is 
+            <b>Player B</b>
+        </p>
+        <br><br>
+        <div class = "ui">
+            <div class="row">
+                <input type="text" id= "button1" 
+                       class="cell" onclick="func3(); func();" 
+                       readonly>
+                <input type="text" id= "button2" 
+                       class="cell" onclick="func4(); func();" 
+                       readonly>
+                <input type="text" id= "button3" class="cell" 
+                       onclick="func5(); func();" 
+                       readonly>
+            </div>
+            <div class="row">
+                <input type="text" id= "button4" 
+                       class="cell" onclick="func6(); func();" 
+                       readonly>
+                <input type="text" id= "button5" 
+                       class="cell" onclick="func7(); func();" 
+                       readonly>
+                <input type="text" id= "button6" 
+                       class="cell" onclick="func8(); func();" 
+                       readonly>
+            </div>
+            <div class="row">
+                <input type="text" id= "button7" 
+                       class="cell" onclick="func9(); func();" 
+                       readonly>
+                <input type="text" id= "button8" 
+                       class="cell" onclick="func10(); func();" 
+                       readonly>
+                <input type="text" id= "button9" 
+                       class="cell" onclick="func11(); func();" 
+                       readonly>
+            </div>
+        </div>
+        <br><br><br>
+        
+        <button id="reset" onclick="func2()">
+            RESET
+        </button>
+        <br><br>
+        <p id="message"></p>
+    </div>
+</body>
+  
+</html>
