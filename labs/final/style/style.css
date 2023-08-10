@@ -23,7 +23,7 @@ p {
 
 /* the inputs styles */
 .cell {
-    border: none;
+    border: 1px solid gray;
     width: 80px;
     height: 80px;
     display: flex;
@@ -36,55 +36,7 @@ p {
 .cell:active {
     outline: none;
 }
-/* 3*3 Grid, the buttom lines and right lines are shown with gray color */
-#button1{
-    border-bottom: 1px solid gray;
-    border-right: 1px solid gray;
-}
-  
-/*  */
-#button2 {
-    border-bottom: 1px solid gray;
-    border-right: 1px solid gray;
-    border-left: 1px solid gray;
-}
-  
-#button3 {
-    border-bottom: 1px solid gray;
-    border-left: 1px solid gray;
-}
-  
-#button4 {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    border-right: 1px solid gray;
-}
-      
-#button5 {
-    border: 1px solid gray;
-}
-  
-#button6 {
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
-    border-left: 1px solid gray;
-}
-  
-#button7 {
-    border-top: 1px solid gray;
-    border-right: 1px solid gray;
-}
-  
-#button8 {
-    border-top: 1px solid gray;
-    border-right: 1px solid gray;
-    border-left: 1px solid gray;
-}
-  
-#button9 {
-    border-top: 1px solid gray;
-    border-left: 1px solid gray;
-}
+
 /* Reset Button */
 #reset {
     box-sizing: border-box;
