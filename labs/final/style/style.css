@@ -13,7 +13,7 @@ p {
 .ui {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /*align-items: center */;
 }
 
 /* the three rows are flex*/
@@ -108,11 +108,6 @@ p {
         Geneva, Tahoma, sans-serif;
     color: dodgerblue;
     font-size: 20px;
-}
-  
-/* Main Container  is centered*/
-#main {
-    text-align: center;
 }
   
 /* Game Instruction Text */

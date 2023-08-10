@@ -12,7 +12,8 @@ function func() {
     var b8 = document.getElementById("button8").value;
     var b9 = document.getElementById("button9").value;
   
-    //
+    //variables created to store the objects buttons
+    //these one will set the actions happening after the condition in the if
     var b1btn = document.getElementById("button1");
     var b2btn = document.getElementById("button2");
     var b3btn = document.getElementById("button3");
@@ -23,17 +24,17 @@ function func() {
     var b8btn = document.getElementById("button8");
     var b9btn = document.getElementById("button9");
   
-    // Checking if Player X won or not and after
+    // Checking if Player A won or not and after
     // that disabled all the other fields
     if ((b1 == 'A') && (b2 == 'A') && (b3 == 'A')) {
         document.getElementById('message')
             .innerHTML = "Player A won";
-        b4.disabled = true;
-        b5.disabled = true;
-        b6.disabled = true;
-        b7.disabled = true;
-        b8.disabled = true;
-        b9.disabled = true;
+        b4btn.disabled = true;
+        b5btn.disabled = true;
+        b6btn.disabled = true;
+        b7btn.disabled = true;
+        b8btn.disabled = true;
+        b9btn.disabled = true;
   
         b1btn.style.color = "green";
         b2btn.style.color = "green";
@@ -42,12 +43,12 @@ function func() {
     else if ((b1 == 'A') && (b4 == 'A') && (b7 == 'A')) {
         document.getElementById('message')
             .innerHTML = "Player A won";
-        b2.disabled = true;
-        b3.disabled = true;
-        b5.disabled = true;
-        b6.disabled = true;
-        b8.disabled = true;
-        b9.disabled = true;
+        b2btn.disabled = true;
+        b3btn.disabled = true;
+        b5btn.disabled = true;
+        b6btn.disabled = true;
+        b8btn.disabled = true;
+        b9btn.disabled = true;
   
         b1btn.style.color = "green";
         b4btn.style.color = "green";
@@ -57,12 +58,12 @@ function func() {
         document.getElementById('message')
             .innerHTML = "Player A won";
   
-        b1.disabled = true;
-        b2.disabled = true;
-        b3.disabled = true;
-        b4.disabled = true;
-        b5.disabled = true;
-        b6.disabled = true;
+        b1btn.disabled = true;
+        b2btn.disabled = true;
+        b3btn.disabled = true;
+        b4btn.disabled = true;
+        b5btn.disabled = true;
+        b6btn.disabled = true;
   
         b7btn.style.color = "green";
         b8btn.style.color = "green";
@@ -72,12 +73,12 @@ function func() {
         document.getElementById('message')
             .innerHTML = "Player A won";
   
-        b1.disabled = true;
-        b2.disabled = true;
-        b4.disabled = true;
-        b5.disabled = true;
-        b7.disabled = true;
-        b8.disabled = true;
+        b1btn.disabled = true;
+        b2btn.disabled = true;
+        b4btn.disabled = true;
+        b5btn.disabled = true;
+        b7btn.disabled = true;
+        b8btn.disabled = true;
   
         b3btn.style.color = "green";
         b6btn.style.color = "green";
@@ -86,12 +87,12 @@ function func() {
     else if ((b1 == 'A') && (b5 == 'A') && (b9 == 'A')) {
         document.getElementById('message')
             .innerHTML = "Player A won";
-        b2.disabled = true;
-        b3.disabled = true;
-        b4.disabled = true;
-        b6.disabled = true;
-        b7.disabled = true;
-        b8.disabled = true;
+        b2btn.disabled = true;
+        b3btn.disabled = true;
+        b4btn.disabled = true;
+        b6btn.disabled = true;
+        b7btn.disabled = true;
+        b8btn.disabled = true;
   
         b1btn.style.color = "green";
         b5btn.style.color = "green";
@@ -100,12 +101,12 @@ function func() {
     else if ((b3 == 'A') && (b5 == 'A') && (b7 == 'A')) {
         document.getElementById('message')
             .innerHTML = "Player A won";
-        b1.disabled = true;
-        b2.disabled = true;
-        b4.disabled = true;
-        b6.disabled = true;
-        b8.disabled = true;
-        b9.disabled = true;
+        b1btn.disabled = true;
+        b2btn.disabled = true;
+        b4btn.disabled = true;
+        b6btn.disabled = true;
+        b8btn.disabled = true;
+        b9btn.disabled = true;
   
         b3btn.style.color = "green";
         b5btn.style.color = "green";
@@ -114,12 +115,12 @@ function func() {
     else if ((b2 == 'A') && (b5 == 'A') && (b8 == 'A')) {
         document.getElementById('message')
             .innerHTML = "Player A won";
-        b1.disabled = true;
-        b2.disabled = true;
-        b4.disabled = true;
-        b6.disabled = true;
-        b7.disabled = true;
-        b9.disabled = true;
+        b1btn.disabled = true;
+        b2btn.disabled = true;
+        b4btn.disabled = true;
+        b6btn.disabled = true;
+        b7btn.disabled = true;
+        b9btn.disabled = true;
   
         b2btn.style.color = "green";
         b5btn.style.color = "green";
@@ -128,30 +129,30 @@ function func() {
     else if ((b4 == 'A') && (b5 == 'A') && (b6 == 'A')) {
         document.getElementById('message')
             .innerHTML = "Player A won";
-        b1.disabled = true;
-        b2.disabled = true;
-        b3.disabled = true;
-        b7.disabled = true;
-        b8.disabled = true;
-        b9.disabled = true;
+        b1btn.disabled = true;
+        b2btn.disabled = true;
+        b3btn.disabled = true;
+        b7btn.disabled = true;
+        b8btn.disabled = true;
+        b9btn.disabled = true;
   
         b4btn.style.color = "green";
         b5btn.style.color = "green";
         b6btn.style.color = "green";
     }
   
-    // Checking of Player X finish
-    // Checking for Player 0 starts, Is player 0 won or
+    // Checking of Player A finish
+    // Checking for Player B starts, Is player B won or
     // not and after that disabled all the other fields
     else if ((b1 == 'B') && (b2 == 'B') && (b3 == 'B')) {
         document.getElementById('message')
             .innerHTML = "Player B won";
-        b4.disabled = true;
-        b5.disabled = true;
-        b6.disabled = true;
-        b7.disabled = true;
-        b8.disabled = true;
-        b9.disabled = true;
+        b4btn.disabled = true;
+        b5btn.disabled = true;
+        b6btn.disabled = true;
+        b7btn.disabled = true;
+        b8btn.disabled = true;
+        b9btn.disabled = true;
   
         b1btn.style.color = "green";
         b2btn.style.color = "green";
@@ -160,12 +161,12 @@ function func() {
     else if ((b1 == 'B') && (b4 == 'B') && (b7 == 'B')) {
         document.getElementById('message')
             .innerHTML = "Player B won";
-        b2.disabled = true;
-        b3.disabled = true;
-        b5.disabled = true;
-        b6.disabled = true;
-        b8.disabled = true;
-        b9.disabled = true;
+        b2btn.disabled = true;
+        b3btn.disabled = true;
+        b5btn.disabled = true;
+        b6btn.disabled = true;
+        b8btn.disabled = true;
+        b9btn.disabled = true;
   
         b1btn.style.color = "green";
         b4btn.style.color = "green";
@@ -174,12 +175,12 @@ function func() {
     else if ((b7 == 'B') && (b8 == 'B') && (b9 == 'B')) {
         document.getElementById('message')
             .innerHTML = "Player B won";
-        b1.disabled = true;
-        b2.disabled = true;
-        b3.disabled = true;
-        b4.disabled = true;
-        b5.disabled = true;
-        b6.disabled = true;
+        b1btn.disabled = true;
+        b2btn.disabled = true;
+        b3btn.disabled = true;
+        b4btn.disabled = true;
+        b5btn.disabled = true;
+        b6btn.disabled = true;
   
         b7btn.style.color = "green";
         b8btn.style.color = "green";
@@ -188,12 +189,12 @@ function func() {
     else if ((b3 == 'B') && (b6 == 'B') && (b9 == 'B')) {
         document.getElementById('message')
             .innerHTML = "Player B won";
-        b1.disabled = true;
-        b2.disabled = true;
-        b4.disabled = true;
-        b5.disabled = true;
-        b7.disabled = true;
-        b8.disabled = true;
+        b1btn.disabled = true;
+        b2btn.disabled = true;
+        b4btn.disabled = true;
+        b5btn.disabled = true;
+        b7btn.disabled = true;
+        b8btn.disabled = true;
 
         b3btn.style.color = "green";
         b6btn.style.color = "green";
@@ -202,12 +203,12 @@ function func() {
     else if ((b1 == 'B') && (b5 == 'B') && (b9 == 'B')) {
         document.getElementById('message')
             .innerHTML = "Player B won";
-        b2.disabled = true;
-        b3.disabled = true;
-        b4.disabled = true;
-        b6.disabled = true;
-        b7.disabled = true;
-        b8.disabled = true;
+        b2btn.disabled = true;
+        b3btn.disabled = true;
+        b4btn.disabled = true;
+        b6btn.disabled = true;
+        b7btn.disabled = true;
+        b8btn.disabled = true;
   
         b1btn.style.color = "green";
         b5btn.style.color = "green";
@@ -216,12 +217,12 @@ function func() {
     else if ((b3 == 'B') && (b5 == 'B') && (b7 == 'B')) {
         document.getElementById('message')
             .innerHTML = "Player B won";
-        b1.disabled = true;
-        b2.disabled = true;
-        b4.disabled = true;
-        b6.disabled = true;
-        b8.disabled = true;
-        b9.disabled = true;
+        b1btn.disabled = true;
+        b2btn.disabled = true;
+        b4btn.disabled = true;
+        b6btn.disabled = true;
+        b8btn.disabled = true;
+        b9btn.disabled = true;
   
         b3btn.style.color = "green";
         b5btn.style.color = "green";
@@ -230,12 +231,12 @@ function func() {
     else if ((b2 == 'B') && (b5 == 'B') && (b8 == 'B')) {
         document.getElementById('message')
             .innerHTML = "Player B won";
-        b1.disabled = true;
-        b3.disabled = true;
-        b4.disabled = true;
-        b6.disabled = true;
-        b7.disabled = true;
-        b9.disabled = true;
+        b1btn.disabled = true;
+        b3btn.disabled = true;
+        b4btn.disabled = true;
+        b6btn.disabled = true;
+        b7btn.disabled = true;
+        b9btn.disabled = true;
   
         b2btn.style.color = "green";
         b5btn.style.color = "green";
@@ -244,12 +245,12 @@ function func() {
     else if ((b4 == 'B') && (b5 == 'B') && (b6 == 'B')) {
         document.getElementById('message')
             .innerHTML = "Player B won";
-        b1.disabled = true;
-        b2.disabled = true;
-        b3.disabled = true;
-        b7.disabled = true;
-        b8.disabled = true;
-        b9.disabled = true;
+        b1btn.disabled = true;
+        b2btn.disabled = true;
+        b3btn.disabled = true;
+        b7btn.disabled = true;
+        b8btn.disabled = true;
+        b9btn.disabled = true;
   
         b4btn.style.color = "green";
         b5btn.style.color = "green";
@@ -269,7 +270,7 @@ function func() {
     }
     else {
   
-        // Here, Printing Result
+        //according to the value of the global variable give the turn
         if (option == 1) {
             document.getElementById('message')
                 .innerHTML = "Player A Turn";
@@ -281,15 +282,17 @@ function func() {
     }
 }
   
-// Function to reset game
+//the reset function
+//this function reloads the web page and sets the inputs values to empty
 function func2() {
     location.reload();
     b1 = b2 = b3 = b4 = b5 = b6 = b7 = b8 = b9 = '';
 }
   
-// Here onwards, functions check turn of the player
-// and put accordingly value X or 0
+//initialized the global variable 
 option = 1;
+
+//function related to the first input
 function func3() {
     if (option == 1) {
         document.getElementById("button1").value = "A";
@@ -303,6 +306,7 @@ function func3() {
     }
 }
   
+//function related to the second input
 function func4() {
     if (option == 1) {
         document.getElementById("button2").value = "A";
@@ -316,6 +320,7 @@ function func4() {
     }
 }
   
+//function related to the third input
 function func5() {
     if (option == 1) {
         document.getElementById("button3").value = "A";
@@ -329,6 +334,7 @@ function func5() {
     }
 }
   
+//function related to the fourth input
 function func6() {
     if (option == 1) {
         document.getElementById("button4").value = "A";
@@ -342,6 +348,7 @@ function func6() {
     }
 }
   
+//function related to the fifth input
 function func7() {
     if (option == 1) {
         document.getElementById("button5").value = "A";
@@ -355,6 +362,7 @@ function func7() {
     }
 }
   
+//function related to the sixth input
 function func8() {
     if (option == 1) {
         document.getElementById("button6").value = "A";
@@ -368,6 +376,7 @@ function func8() {
     }
 }
   
+//function related to the seventh input
 function func9() {
     if (option == 1) {
         document.getElementById("button7").value = "A";
@@ -381,6 +390,7 @@ function func9() {
     }
 }
   
+//function related to the eight input
 function func10() {
     if (option == 1) {
         document.getElementById("button8").value = "A";
@@ -394,6 +404,7 @@ function func10() {
     }
 }
   
+//function related to the nine input
 function func11() {
     if (option == 1) {
         document.getElementById("button9").value = "A";
